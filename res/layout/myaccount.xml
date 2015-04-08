@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myaccount"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:layout_gravity="center"
+    android:orientation="vertical" 
+    tools:ignore="MergeRootFrame"
+    android:fillViewport="true" >
+
+
+    <TextView
+        android:id="@+id/myaccount_usernametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myaccount_username"
+        android:layout_marginLeft="41dp"
+        android:layout_toRightOf="@+id/myaccount_username"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/myaccount_nametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myaccount_usernametxt"
+        android:layout_alignTop="@+id/myaccount_name"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/myaccount_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="96dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/myaccount_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myaccount_username"
+        android:layout_below="@+id/myaccount_usernametxt"
+        android:layout_marginTop="33dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/myaccount_credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myaccount_name"
+        android:layout_below="@+id/myaccount_nametxt"
+        android:layout_marginTop="30dp"
+        android:text="Credits" />
+
+    <TextView
+        android:id="@+id/myaccount_creditstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/myaccount_credits"
+        android:layout_alignBottom="@+id/myaccount_credits"
+        android:layout_alignRight="@+id/myaccount_nametxt"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <RadioGroup
+      android:id="@+id/A_radioCredits"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/myaccount_credits"
+        android:layout_marginTop="21dp"
+      android:orientation="horizontal" >
+
+      <RadioButton
+          android:id="@+id/A_credits100"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/myaccount_logout"
+          android:layout_alignParentLeft="true"
+          android:text="100" />
+
+      <RadioButton
+          android:id="@+id/A_radioButton3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/myaccount_logout"
+          android:layout_toRightOf="@+id/radioButton2"
+          android:text="200" />
+
+      <RadioButton
+          android:id="@+id/A_radioButton1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/myaccount_logout"
+          android:layout_toRightOf="@+id/A_credits100"
+          android:text="300" />
+
+      <RadioButton
+          android:id="@+id/A_radioButton2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/myaccount_logout"
+          android:layout_toRightOf="@+id/A_radioButton1"
+          android:text="500" />
+
+      <RadioButton
+          android:id="@+id/A_radioButton4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/myaccount_logout"
+         
+          android:text="1000" />
+  </RadioGroup>
+
+    <Button
+        android:id="@+id/creditrecharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/myaccount_chnagepassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Recharge with Selected Credits" />
+
+    <TextView
+        android:id="@+id/rechargeinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/myaccount_usernametxt"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rechargeinfo"
+        android:layout_alignBottom="@+id/rechargeinfo"
+        android:layout_centerHorizontal="true"
+        android:text="Account Information"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/myaccount_chnagepassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/myaccount_credits"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/myaccount_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/A_radioCredits"
+        android:layout_below="@+id/creditrecharge"
+        android:text="Logout" />
+
+</RelativeLayout>

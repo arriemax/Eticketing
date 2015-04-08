@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signup"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.onlineTicketChecker.Signup"
+    tools:ignore="MergeRootFrame"
+    android:fillViewport="true" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:scrollbarStyle="insideInset" >
+
+    <TextView
+        android:id="@+id/usernametextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="29dp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/dateofbirthtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:layout_below="@+id/Repeatpasswordtextview"
+        android:layout_alignLeft="@+id/Repeatpasswordtextview"
+        android:layout_marginTop="16dp"
+        android:text="Date of birth" />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nametextview"
+        android:layout_alignLeft="@+id/username"
+        android:hint="Full Name"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/usernametextview"
+        android:layout_alignParentRight="true"
+        android:hint="Username"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/usernametextview"
+        android:text="User registartion"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/signingpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Repeatpasswordtextview"
+        android:layout_alignLeft="@+id/fullname"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/dateofbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateofbirthtextview"
+        android:layout_alignLeft="@+id/repeatPassword"
+        android:hint="DD-MM-YYYY"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/address"
+        android:layout_alignTop="@+id/reset"
+        android:layout_marginRight="37dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/Repeatpasswordtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordtextview"
+        android:layout_below="@+id/passwordtextview"
+        android:layout_marginTop="16dp"
+        android:text="Confirm Password" />
+
+    <TextView
+        android:id="@+id/emailtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/addresstextview"
+        android:layout_below="@+id/addresstextview"
+        android:layout_marginTop="16dp"
+        android:text="E mail" />
+
+    <EditText
+        android:id="@+id/phoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dateofbirth"
+        android:ems="10"
+        android:hint="9033445566"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/phonenumbertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateofbirthtextview"
+        android:layout_below="@+id/dateofbirthtextview"
+        android:layout_marginTop="16dp"
+        android:text="Phone number" />
+
+    <TextView
+        android:id="@+id/addresstextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/phonenumbertextview"
+        android:layout_below="@+id/phonenumbertextview"
+        android:layout_marginTop="16dp"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/nametextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernametextview"
+        android:layout_below="@+id/usernametextview"
+        android:layout_marginTop="16dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/passwordtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametextview"
+        android:layout_alignLeft="@+id/nametextview"
+        android:layout_marginTop="16dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/repeatPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/signingpassword"
+        android:ems="10"
+        android:hint="Repeat Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_toRightOf="@+id/phonenumbertextview"
+        android:ems="10"
+        android:hint="user@xyz.com"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addresstextview"
+        android:layout_alignLeft="@+id/email"
+        android:ems="10"
+        android:hint="Your Postal Address"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/reset"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="51dp"
+        android:layout_toLeftOf="@+id/dateofbirth"
+        android:text="Reset" />
+
+  <RadioGroup
+      android:id="@+id/radioCredits"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/email"
+        android:layout_marginTop="21dp"
+      android:orientation="horizontal" >
+
+      <RadioButton
+          android:id="@+id/credits100"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/register"
+          android:layout_alignParentLeft="true"
+          android:text="100" />
+
+      <RadioButton
+          android:id="@+id/radioButton3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/register"
+          android:layout_toRightOf="@+id/radioButton2"
+          android:text="200" />
+
+      <RadioButton
+          android:id="@+id/radioButton2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/register"
+          android:layout_toRightOf="@+id/radioButton1"
+          android:text="500" />
+
+      <RadioButton
+          android:id="@+id/radioButton4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_above="@+id/register"
+          
+          android:layout_toRightOf="@+id/header"
+          android:text="1000" />
+  </RadioGroup>
+
+  <TextView
+      android:id="@+id/qr_textView11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/emailtextview"
+      android:layout_below="@+id/email"
+      android:text="Choose a Credit" />
+
+\
+
+</RelativeLayout>
+
+</ScrollView>
